@@ -31,9 +31,7 @@ Load the data and perform pre-processing in order to remove NA values. Also refo
 
 ```{r}
 
-###TAKE THIS PATH OUT###
 
-setwd("C:/Users/genel/Documents/Coursera/ReproducibleResearch/Project1")
 activity <- read.csv("activity.csv")
 activity$day <- weekdays(as.Date(activity$date))
 activity$DateTime<- as.POSIXct(activity$date, format="%Y-%m-%d")
